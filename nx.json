@@ -29,6 +29,9 @@
     "onlinestore-admin-e2e": {
       "tags": [],
       "implicitDependencies": ["onlinestore-admin"]
+    },
+    "infrastructure-logger": {
+      "tags": []
     }
   }
 }

@@ -121,6 +121,47 @@
           }
         }
       }
+    },
+    "infrastructure-logger": {
+      "projectType": "library",
+      "root": "libs/infrastructure/logger",
+      "sourceRoot": "libs/infrastructure/logger/src",
+      "prefix": "myorg",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/angular:package",
+          "options": {
+            "tsConfig": "libs/infrastructure/logger/tsconfig.lib.json",
+            "project": "libs/infrastructure/logger/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/infrastructure/logger/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/infrastructure/logger/tsconfig.lib.json",
+              "libs/infrastructure/logger/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/infrastructure/logger/**/*"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/infrastructure/logger/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "schematics": {}
     }
   },
   "cli": {
