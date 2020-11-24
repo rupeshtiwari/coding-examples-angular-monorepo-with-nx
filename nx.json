@@ -18,48 +18,75 @@
     "default": {
       "runner": "@nrwl/workspace/tasks-runners/default",
       "options": {
-        "cacheableOperations": ["build", "lint", "test", "e2e"]
+        "cacheableOperations": [
+          "build",
+          "lint",
+          "test",
+          "e2e"
+        ]
       }
     }
   },
   "projects": {
-    "onlinestore-admin": {
-      "tags": []
-    },
-    "onlinestore-admin-e2e": {
-      "tags": [],
-      "implicitDependencies": ["onlinestore-admin"]
-    },
-    "infrastructure-logger": {
-      "tags": []
-    },
-    "pricing-coupons": {
-      "tags": ["scope:pricing", "type:feature"]
-    },
-    "sales-product-editor": {
-      "tags": ["scope:sales", "type:feature"]
-    },
-    "sales-products": {
-      "tags": ["scope:sales", "type:feature"]
-    },
-    "customers-user-editor": {
-      "tags": ["scope:customers", "type:feature"]
-    },
-    "customers-users": {
-      "tags": ["scope:customers", "type:feature"]
-    },
-    "shared-ng-material": {
-      "tags": ["scope:shared", "type:ui"]
-    },
-    "shared-layout": {
-      "tags": ["scope:shared", "type:ui"]
-    },
     "onlinestore-client": {
-      "tags": ["type:app", "scope:client"]
+      "tags": [
+        "type:app",
+        "scope:client"
+      ]
+    },
+    "onlinestore-admin": {
+      "tags": [
+        "type:app",
+        "scope:admin"
+      ]
     },
     "onlinestore-client-e2e": {
       "tags": [],
-      "implicitDependencies": ["onlinestore-client"]
+      "implicitDependencies": [
+        "onlinestore-client"
+      ]
+    },
+    "onlinestore-admin-e2e": {
+      "tags": [],
+      "implicitDependencies": [
+        "onlinestore-admin"
+      ]
+    },
+    "sales-product-editor": {
+      "tags": [
+        "scope:admin",
+        "type:sales"
+      ]
+    },
+    "sales-products": {
+      "tags": [
+        "scope:client",
+        "type:sales"
+      ]
+    },
+    "customers-user-editor": {
+      "tags": [
+        "scope:admin",
+        "type:customers"
+      ]
+    },
+    "customers-users": {
+      "tags": [
+        "scope:client",
+        "type:customers"
+      ]
+    },
+    "shared-ng-material": {
+      "tags": [
+        "scope:shared",
+        "type:infrastructure"
+      ]
+    },
+    "shared-layout": {
+      "tags": [
+        "scope:shared",
+        "type:infrastructure"
+      ]
     }
   }
 }

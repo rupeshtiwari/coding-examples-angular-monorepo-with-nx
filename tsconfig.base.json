@@ -16,8 +16,6 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@myorg/logger": ["libs/infrastructure/logger/src/index.ts"],
-      "@myorg/pricing/coupons": ["libs/pricing/coupons/src/index.ts"],
       "@myorg/sales/product-editor": ["libs/sales/product-editor/src/index.ts"],
       "@myorg/sales/products": ["libs/sales/products/src/index.ts"],
       "@myorg/customers/user-editor": [

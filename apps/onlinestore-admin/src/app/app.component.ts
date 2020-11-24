@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { SalesProductsModule } from '@myorg/sales/products';
+
 
 @Component({
   selector: 'myorg-root',
