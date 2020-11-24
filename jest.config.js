@@ -9,5 +9,6 @@ module.exports = {
     '<rootDir>/libs/customers/users',
     '<rootDir>/libs/shared/ng-material',
     '<rootDir>/libs/shared/layout',
+    '<rootDir>/apps/onlinestore-client',
   ],
 };

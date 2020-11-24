@@ -53,6 +53,13 @@
     },
     "shared-layout": {
       "tags": ["scope:shared", "type:ui"]
+    },
+    "onlinestore-client": {
+      "tags": ["type:app", "scope:client"]
+    },
+    "onlinestore-client-e2e": {
+      "tags": [],
+      "implicitDependencies": ["onlinestore-client"]
     }
   }
 }

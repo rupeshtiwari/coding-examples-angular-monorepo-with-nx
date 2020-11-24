@@ -431,6 +431,127 @@
         }
       },
       "schematics": {}
+    },
+    "onlinestore-client": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "apps/onlinestore-client",
+      "sourceRoot": "apps/onlinestore-client/src",
+      "prefix": "myorg",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/apps/onlinestore-client",
+            "index": "apps/onlinestore-client/src/index.html",
+            "main": "apps/onlinestore-client/src/main.ts",
+            "polyfills": "apps/onlinestore-client/src/polyfills.ts",
+            "tsConfig": "apps/onlinestore-client/tsconfig.app.json",
+            "aot": true,
+            "assets": [
+              "apps/onlinestore-client/src/favicon.ico",
+              "apps/onlinestore-client/src/assets"
+            ],
+            "styles": ["apps/onlinestore-client/src/styles.css"],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "apps/onlinestore-client/src/environments/environment.ts",
+                  "with": "apps/onlinestore-client/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "onlinestore-client:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "onlinestore-client:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "onlinestore-client:build"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "apps/onlinestore-client/tsconfig.app.json",
+              "apps/onlinestore-client/tsconfig.spec.json",
+              "apps/onlinestore-client/tsconfig.editor.json"
+            ],
+            "exclude": ["**/node_modules/**", "!apps/onlinestore-client/**/*"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "apps/onlinestore-client/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "onlinestore-client-e2e": {
+      "root": "apps/onlinestore-client-e2e",
+      "sourceRoot": "apps/onlinestore-client-e2e/src",
+      "projectType": "application",
+      "architect": {
+        "e2e": {
+          "builder": "@nrwl/cypress:cypress",
+          "options": {
+            "cypressConfig": "apps/onlinestore-client-e2e/cypress.json",
+            "tsConfig": "apps/onlinestore-client-e2e/tsconfig.e2e.json",
+            "devServerTarget": "onlinestore-client:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "onlinestore-client:serve:production"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": ["apps/onlinestore-client-e2e/tsconfig.e2e.json"],
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/onlinestore-client-e2e/**/*"
+            ]
+          }
+        }
+      }
     }
   },
   "cli": {
