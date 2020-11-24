@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import {SalesProductEditorModule} from '@myorg/sales-product-editor';
+ import {SalesProductEditorModule} from '@myorg/sales-product-editor'
 
 @NgModule({
   imports: [CommonModule],
