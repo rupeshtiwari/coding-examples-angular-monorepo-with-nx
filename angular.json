@@ -162,6 +162,44 @@
         }
       },
       "schematics": {}
+    },
+    "pricing-coupons": {
+      "projectType": "library",
+      "root": "libs/pricing/coupons",
+      "sourceRoot": "libs/pricing/coupons/src",
+      "prefix": "myorg",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/angular:package",
+          "options": {
+            "tsConfig": "libs/pricing/coupons/tsconfig.lib.json",
+            "project": "libs/pricing/coupons/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/pricing/coupons/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/pricing/coupons/tsconfig.lib.json",
+              "libs/pricing/coupons/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/pricing/coupons/**/*"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/pricing/coupons/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "schematics": {}
     }
   },
   "cli": {

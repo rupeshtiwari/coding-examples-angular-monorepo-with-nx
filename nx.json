@@ -32,6 +32,9 @@
     },
     "infrastructure-logger": {
       "tags": []
+    },
+    "pricing-coupons": {
+      "tags": ["scope:pricing", "type:feature"]
     }
   }
 }

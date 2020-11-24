@@ -16,7 +16,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@myorg/logger": ["libs/infrastructure/logger/src/index.ts"]
+      "@myorg/logger": ["libs/infrastructure/logger/src/index.ts"],
+      "@myorg/pricing/coupons": ["libs/pricing/coupons/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
