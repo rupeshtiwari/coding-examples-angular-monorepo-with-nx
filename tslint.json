@@ -117,6 +117,18 @@
       "allow": [],
       "depConstraints": [
         {
+          "sourceTag": "type:sales",
+          "onlyDependOnLibsWithTags": [
+            "type:sales"
+          ]
+        },
+        {
+          "sourceTag": "type:customers",
+          "onlyDependOnLibsWithTags": [
+            "type:customers"
+          ]
+        },
+        {
           "sourceTag": "scope:admin",
           "onlyDependOnLibsWithTags": [
             "scope:admin",
@@ -128,20 +140,6 @@
           "onlyDependOnLibsWithTags": [
             "scope:shared",
             "scope:client"
-          ]
-        },
-        {
-          "sourceTag": "type:sales",
-          "onlyDependOnLibsWithTags": [
-            "type:infrastructure",
-            "type:sales"
-          ]
-        },
-        {
-          "sourceTag": "type:customers",
-          "onlyDependOnLibsWithTags": [
-            "type:infrastructure",
-            "type:customers"
           ]
         }
       ]

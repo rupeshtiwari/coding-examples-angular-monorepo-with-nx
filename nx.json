@@ -54,25 +54,21 @@
     },
     "sales-product-editor": {
       "tags": [
-        "scope:admin",
         "type:sales"
       ]
     },
     "sales-products": {
       "tags": [
-        "scope:client",
         "type:sales"
       ]
     },
     "customers-user-editor": {
       "tags": [
-        "scope:admin",
         "type:customers"
       ]
     },
     "customers-users": {
       "tags": [
-        "scope:client",
         "type:customers"
       ]
     },

@@ -1,5 +1,5 @@
 {
-  "name": "@myorg/sales/product-editor",
+  "name": "@myorg/sales-product-editor",
   "version": "0.0.1",
   "peerDependencies": {
     "@angular/common": "^10.1.6",
