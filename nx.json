@@ -35,6 +35,24 @@
     },
     "pricing-coupons": {
       "tags": ["scope:pricing", "type:feature"]
+    },
+    "sales-product-editor": {
+      "tags": ["scope:sales", "type:feature"]
+    },
+    "sales-products": {
+      "tags": ["scope:sales", "type:feature"]
+    },
+    "customers-user-editor": {
+      "tags": ["scope:customers", "type:feature"]
+    },
+    "customers-users": {
+      "tags": ["scope:customers", "type:feature"]
+    },
+    "shared-ng-material": {
+      "tags": ["scope:shared", "type:ui"]
+    },
+    "shared-layout": {
+      "tags": ["scope:shared", "type:ui"]
     }
   }
 }

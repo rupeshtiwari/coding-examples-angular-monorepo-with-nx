@@ -17,7 +17,15 @@
     "baseUrl": ".",
     "paths": {
       "@myorg/logger": ["libs/infrastructure/logger/src/index.ts"],
-      "@myorg/pricing/coupons": ["libs/pricing/coupons/src/index.ts"]
+      "@myorg/pricing/coupons": ["libs/pricing/coupons/src/index.ts"],
+      "@myorg/sales/product-editor": ["libs/sales/product-editor/src/index.ts"],
+      "@myorg/sales/products": ["libs/sales/products/src/index.ts"],
+      "@myorg/customers/user-editor": [
+        "libs/customers/user-editor/src/index.ts"
+      ],
+      "@myorg/customers/users": ["libs/customers/users/src/index.ts"],
+      "@myorg/shared/ng-material": ["libs/shared/ng-material/src/index.ts"],
+      "@myorg/shared/layout": ["libs/shared/layout/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
