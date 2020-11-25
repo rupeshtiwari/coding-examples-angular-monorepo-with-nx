@@ -78,9 +78,29 @@
         "allow": [],
         "depConstraints": [
           {
-            "sourceTag": "*",
+            "sourceTag": "type:sales",
             "onlyDependOnLibsWithTags": [
-              "*"
+              "type:sales"
+            ]
+          },
+          {
+            "sourceTag": "type:customers",
+            "onlyDependOnLibsWithTags": [
+              "type:customers"
+            ]
+          },
+          {
+            "sourceTag": "scope:admin",
+            "onlyDependOnLibsWithTags": [
+              "scope:admin",
+              "scope:shared"
+            ]
+          },
+          {
+            "sourceTag": "scope:client",
+            "onlyDependOnLibsWithTags": [
+              "scope:shared",
+              "scope:client"
             ]
           }
         ]
@@ -110,39 +130,6 @@
     "template-no-negated-async": true,
     "use-lifecycle-interface": true,
     "use-pipe-transform-interface": true
-  },
-  "nx-enforce-module-boundaries": [
-    true,
-    {
-      "allow": [],
-      "depConstraints": [
-        {
-          "sourceTag": "type:sales",
-          "onlyDependOnLibsWithTags": [
-            "type:sales"
-          ]
-        },
-        {
-          "sourceTag": "type:customers",
-          "onlyDependOnLibsWithTags": [
-            "type:customers"
-          ]
-        },
-        {
-          "sourceTag": "scope:admin",
-          "onlyDependOnLibsWithTags": [
-            "scope:admin",
-            "scope:shared"
-          ]
-        },
-        {
-          "sourceTag": "scope:client",
-          "onlyDependOnLibsWithTags": [
-            "scope:shared",
-            "scope:client"
-          ]
-        }
-      ]
-    }
-  ]
+  }
+
 }
