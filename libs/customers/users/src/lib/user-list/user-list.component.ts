@@ -13,38 +13,38 @@ export class UserListComponent implements OnInit {
     this.list.push(
       {
         name: 'Maria Anders',
-        compnay: 'Alfreds Futterkiste',
+        company: 'Alfreds Futterkiste',
         country: 'Germany',
       },
       {
         name: 'Christina Berglund',
-        compnay: 'Berglunds snabbköp',
+        company: 'Berglunds snabbköp',
         country: 'Sweden',
       },
       {
         name: 'Francisco Chang',
-        compnay: 'Centro comercial Moctezuma',
+        company: 'Centro comercial Moctezuma',
         country: 'Mexico',
       },
       {
         name: 'Roland Mendel',
-        compnay: 'Ernst Handel',
+        company: 'Ernst Handel',
         country: 'Austria',
       },
       {
         name: 'Helen Bennett',
-        compnay: 'Island Trading',
+        company: 'Island Trading',
         country: 'UK',
       },
 
       {
         name: 'Philip Cramer',
-        compnay: 'Königlich Essen',
+        company: 'Königlich Essen',
         country: 'Germany',
       },
       {
         name: 'Laughing Bacchus Winecellars',
-        compnay: 'Yoshi Tannamuri',
+        company: 'Yoshi Tannamuri',
         country: 'Canada',
       }
     );
