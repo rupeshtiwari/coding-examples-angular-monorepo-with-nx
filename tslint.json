@@ -80,13 +80,15 @@
           {
             "sourceTag": "type:sales",
             "onlyDependOnLibsWithTags": [
-              "type:sales"
+              "type:sales",
+              "type:branding"
             ]
           },
           {
             "sourceTag": "type:customers",
             "onlyDependOnLibsWithTags": [
-              "type:customers"
+              "type:customers",
+              "type:branding"
             ]
           },
           {

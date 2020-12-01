@@ -1,9 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { SharedNgMaterialModule } from '@myorg/shared/ng-material';
 
 @NgModule({
-  imports: [CommonModule],
+  imports: [CommonModule, SharedNgMaterialModule],
 })
-export class CustomersUsersModule {
-
-}
+export class CustomersUsersModule {}

@@ -79,13 +79,13 @@
     "shared-ng-material": {
       "tags": [
         "scope:shared",
-        "type:ui"
+        "type:branding"
       ]
     },
     "shared-layout": {
       "tags": [
         "scope:shared",
-        "type:ui"
+        "type:branding"
       ]
     }
   }
