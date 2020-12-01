@@ -1,24 +1,28 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
-import { AppComponent } from './app.component';
+import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { SalesProductsModule } from '@myorg/sales-products';
+import { AppComponent } from './app.component';
 import { ProductListPageComponent } from './product-list-page/product-list-page.component';
 
 @NgModule({
   declarations: [AppComponent, ProductListPageComponent],
   imports: [
     BrowserModule,
-    RouterModule.forRoot([
-      { path: '', redirectTo: 'products', pathMatch: 'full' },
-      {
+    SalesProductsModule,
+    RouterModule.forRoot(
+      [
+        { path: '', redirectTo: '/products', pathMatch: 'full' },
+
+        {
           path: 'products',
-          component: ProductListPageComponent
-      },
-    ], { initialNavigation: 'enabled' }),
+          component: ProductListPageComponent,
+        },
+      ],
+      { initialNavigation: 'enabled' }
+    ),
   ],
-  providers: [SalesProductsModule],
+  providers: [],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
