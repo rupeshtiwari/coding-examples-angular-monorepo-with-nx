@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import { LogService } from '../../../../../shared/logger/src/lib/log.service';
 export interface User {
   firstName?: string;
   lastName?: string;
@@ -10,7 +11,7 @@ export interface User {
   styleUrls: ['./adduser.component.css'],
 })
 export class AdduserComponent implements OnInit {
-  constructor(private _snackBar: MatSnackBar) {}
+  constructor(private _snackBar: MatSnackBar, private logService: LogService) {}
   user: User = {};
   showThanks = false;
 
@@ -18,8 +19,10 @@ export class AdduserComponent implements OnInit {
 
   addUser() {
     this.showThanks = true;
+    const msg =`${this.user.firstName} ${this.user.lastName} added successfully!`;
+    this.logService.log(msg);
     this._snackBar.open(
-      `${this.user.firstName} ${this.user.lastName} added successfully!`,
+      msg,
       'Thanks',
       {
         duration: 3 * 1000,

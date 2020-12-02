@@ -83,10 +83,7 @@
               "apps/onlinestore-admin/tsconfig.spec.json",
               "apps/onlinestore-admin/tsconfig.editor.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!apps/onlinestore-admin/**/*"
-            ]
+            "exclude": ["**/node_modules/**", "!apps/onlinestore-admin/**/*"]
           }
         },
         "test": {
@@ -119,9 +116,7 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": [
-              "apps/onlinestore-admin-e2e/tsconfig.e2e.json"
-            ],
+            "tsConfig": ["apps/onlinestore-admin-e2e/tsconfig.e2e.json"],
             "exclude": [
               "**/node_modules/**",
               "!apps/onlinestore-admin-e2e/**/*"
@@ -155,10 +150,7 @@
               "libs/sales/product-editor/tsconfig.lib.json",
               "libs/sales/product-editor/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!libs/sales/product-editor/**/*"
-            ]
+            "exclude": ["**/node_modules/**", "!libs/sales/product-editor/**/*"]
           }
         },
         "test": {
@@ -196,10 +188,7 @@
               "libs/sales/products/tsconfig.lib.json",
               "libs/sales/products/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!libs/sales/products/**/*"
-            ]
+            "exclude": ["**/node_modules/**", "!libs/sales/products/**/*"]
           }
         },
         "test": {
@@ -278,10 +267,7 @@
               "libs/customers/users/tsconfig.lib.json",
               "libs/customers/users/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!libs/customers/users/**/*"
-            ]
+            "exclude": ["**/node_modules/**", "!libs/customers/users/**/*"]
           }
         },
         "test": {
@@ -319,10 +305,7 @@
               "libs/shared/ng-material/tsconfig.lib.json",
               "libs/shared/ng-material/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!libs/shared/ng-material/**/*"
-            ]
+            "exclude": ["**/node_modules/**", "!libs/shared/ng-material/**/*"]
           }
         },
         "test": {
@@ -360,10 +343,7 @@
               "libs/shared/layout/tsconfig.lib.json",
               "libs/shared/layout/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!libs/shared/layout/**/*"
-            ]
+            "exclude": ["**/node_modules/**", "!libs/shared/layout/**/*"]
           }
         },
         "test": {
@@ -396,9 +376,7 @@
               "apps/onlinestore-client/src/favicon.ico",
               "apps/onlinestore-client/src/assets"
             ],
-            "styles": [
-              "apps/onlinestore-client/src/styles.css"
-            ],
+            "styles": ["apps/onlinestore-client/src/styles.css"],
             "scripts": []
           },
           "configurations": {
@@ -457,10 +435,7 @@
               "apps/onlinestore-client/tsconfig.spec.json",
               "apps/onlinestore-client/tsconfig.editor.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!apps/onlinestore-client/**/*"
-            ]
+            "exclude": ["**/node_modules/**", "!apps/onlinestore-client/**/*"]
           }
         },
         "test": {
@@ -493,9 +468,7 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": [
-              "apps/onlinestore-client-e2e/tsconfig.e2e.json"
-            ],
+            "tsConfig": ["apps/onlinestore-client-e2e/tsconfig.e2e.json"],
             "exclude": [
               "**/node_modules/**",
               "!apps/onlinestore-client-e2e/**/*"
@@ -503,6 +476,44 @@
           }
         }
       }
+    },
+    "shared-logger": {
+      "projectType": "library",
+      "root": "libs/shared/logger",
+      "sourceRoot": "libs/shared/logger/src",
+      "prefix": "myorg",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/angular:package",
+          "options": {
+            "tsConfig": "libs/shared/logger/tsconfig.lib.json",
+            "project": "libs/shared/logger/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/shared/logger/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/shared/logger/tsconfig.lib.json",
+              "libs/shared/logger/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/shared/logger/**/*"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/shared/logger/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "schematics": {}
     }
   },
   "cli": {

@@ -4,6 +4,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
 import { SharedNgMaterialModule } from '@myorg/shared/ng-material';
 import { AppComponent } from './app.component';
+import { SharedLoggerModule } from '@myorg/shared/logger';
 
 @NgModule({
   declarations: [AppComponent],
@@ -11,6 +12,7 @@ import { AppComponent } from './app.component';
     BrowserModule,
     BrowserAnimationsModule,
     SharedNgMaterialModule,
+    SharedLoggerModule,
     RouterModule.forRoot(
       [
         { path: '', redirectTo: '/adduser', pathMatch: 'full' },
