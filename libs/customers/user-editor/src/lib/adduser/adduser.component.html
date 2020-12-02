@@ -1,0 +1,33 @@
+<section id="thankyou" *ngIf="showThanks">
+  <h2>Thanks!</h2>
+  <mat-divider></mat-divider>
+  <div>
+    <button mat-raised-button color="primary" type="submit" (click)="showThanks=false"> Add more user</button>
+  </div>
+</section>
+<section id="addUserDiv" *ngIf="!showThanks">
+  <form name="addUserForm">
+    <h2>Add User Form</h2>
+    <mat-divider></mat-divider>
+    <p>
+      <mat-form-field appearance="standard">
+        <mat-label>First Name</mat-label>
+        <input required matInput placeholder="First Name" [(ngModel)]="user.firstName"
+          [ngModelOptions]="{standalone: true}">
+        <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+        <mat-hint>Enter your first name</mat-hint>
+      </mat-form-field>
+    </p>
+    <p>
+      <mat-form-field appearance="standard">
+        <mat-label>Last Name</mat-label>
+        <input required matInput placeholder="Last Name" [(ngModel)]="user.lastName"
+          [ngModelOptions]="{standalone: true}">
+        <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+        <mat-hint>Enter your last name</mat-hint>
+      </mat-form-field>
+    </p>
+    <button mat-raised-button color="primary" type="submit" (click)="addUser()"> Submit</button>
+  </form>
+   
+</section>
