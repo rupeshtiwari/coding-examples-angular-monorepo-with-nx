@@ -1,11 +1,17 @@
-<header class="flex">
-  <img
+<p>
+  <mat-toolbar color="primary">
+    <img
     alt="Nx logo"
     width="75"
     src="assets/client.svg"
   />
-  <h1>Welcome to {{ title }}!</h1>
-</header>
+<mat-toolbar-row>
+  <a  routerLink="/products"mat-flat-button color="secondary" routerLinkActive> Products </a>
+  <a  routerLink="/users"mat-flat-button color="secondary"> Users </a>
+</mat-toolbar-row>
+   </mat-toolbar>
+  </p>
+
 <main>
   <p>Thank you for showing some ♥ for Our store.</p>
   <div class="flex github-star-container">
@@ -13,5 +19,6 @@
   </div>
 
 </main>
+
 
 
