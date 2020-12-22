@@ -1,6 +1,9 @@
 /*
  * Remove template code below
  */
+ .test {
+   color:red;
+ }
 :host {
   display: block;
   font-family: sans-serif;
