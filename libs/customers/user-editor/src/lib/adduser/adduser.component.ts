@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
-import { LogService } from '../../../../../shared/logger/src/lib/log.service';
+import { LogService } from '@myorg/shared/logger';
 export interface User {
   firstName?: string;
   lastName?: string;
