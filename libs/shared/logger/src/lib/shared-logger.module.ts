@@ -4,6 +4,5 @@ import { LogService } from './log.service';
 
 @NgModule({
   imports: [CommonModule],
-  exports:[LogService]
 })
 export class SharedLoggerModule {}
