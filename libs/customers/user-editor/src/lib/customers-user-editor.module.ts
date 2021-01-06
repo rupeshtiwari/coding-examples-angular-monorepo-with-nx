@@ -4,16 +4,17 @@ import { AdduserComponent } from './adduser/adduser.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SharedNgMaterialModule } from '@myorg/shared/ng-material';
 import { RouterModule } from '@angular/router';
+import { CustomersUserEditorRoutingModule } from './customers-user-editor-routing.module';
 
 @NgModule({
-  imports: [CommonModule, FormsModule,ReactiveFormsModule,SharedNgMaterialModule,   RouterModule.forChild([
-    {
-      path: '',
-      pathMatch: 'full',
-      component: AdduserComponent
-    }
-  ])],
+  imports: [
+    CommonModule,
+    FormsModule,
+    ReactiveFormsModule,
+    SharedNgMaterialModule,
+    CustomersUserEditorRoutingModule,
+  ],
   declarations: [AdduserComponent],
-  exports:[AdduserComponent]
+  exports: [AdduserComponent],
 })
 export class CustomersUserEditorModule {}
