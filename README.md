@@ -1,3 +1,5 @@
+[![Build status](https://dev.azure.com/Rupesh0904/Open%20Source/_apis/build/status/MonoRepo-Nx-Build)](https://dev.azure.com/Rupesh0904/Open%20Source/_build/latest?definitionId=1)
+
 # Myorg
 
 This project was generated using [Nx](https://nx.dev).
