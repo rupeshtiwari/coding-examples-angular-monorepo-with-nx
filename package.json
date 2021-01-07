@@ -28,8 +28,8 @@
     "help": "nx help",
     "build:affected:prod": "nx affected:build --parallel --maxParallel=5 --configuration=production --with-deps --base=master~1 --head=master",
     "test:prod": "nx affected:test --parallel --ci --code-coverage",
-    "build:all":"nx run-many --all --parallel --target=build",
-    "build:apps":"nx run-many --parallel --target=build --projects=onlinestore-admin,onlinestore-client --with-deps --configuration=production"
+    "build:all": "nx run-many --all --parallel --target=build",
+    "build:apps": "nx run-many --parallel --target=build --projects=onlinestore-admin,onlinestore-client --with-deps --configuration=production"
   },
   "private": true,
   "dependencies": {
@@ -54,23 +54,24 @@
     "@angular/compiler-cli": "^10.1.0",
     "@angular/language-service": "^10.1.0",
     "@nrwl/cli": "10.4.4",
+    "@nrwl/cypress": "10.4.4",
     "@nrwl/jest": "10.4.4",
     "@nrwl/tao": "10.4.4",
     "@nrwl/workspace": "10.4.4",
     "@types/jest": "26.0.8",
     "@types/node": "~8.9.4",
     "codelyzer": "~5.0.1",
+    "cypress": "^5.5.0",
     "dotenv": "6.2.0",
     "eslint": "7.10.0",
     "jest": "26.2.2",
     "jest-preset-angular": "8.3.1",
+    "ng-packagr": "^10.1.0",
+    "nx": "^11.0.20",
     "prettier": "2.1.2",
     "ts-jest": "26.4.0",
-    "ng-packagr": "^10.1.0",
     "ts-node": "~7.0.0",
     "tslint": "~6.0.0",
-    "typescript": "~4.0.3",
-    "cypress": "^5.5.0",
-    "@nrwl/cypress": "10.4.4"
+    "typescript": "~4.0.3"
   }
 }
