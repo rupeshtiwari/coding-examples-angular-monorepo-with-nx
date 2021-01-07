@@ -29,7 +29,7 @@
     "build:affected:prod": "nx affected:build --parallel --maxParallel=5 --configuration=production --with-deps --base=master~1 --head=master",
     "test:prod": "nx affected:test --parallel --ci --code-coverage",
     "build:all": "nx run-many --all --parallel --target=build",
-    "build:apps": "nx run-many --parallel --target=build --projects=onlinestore-admin,onlinestore-client --with-deps --configuration=production"
+    "build:apps": "npx nx run-many --parallel --target=build --projects=onlinestore-admin,onlinestore-client --with-deps --configuration=production"
   },
   "private": true,
   "dependencies": {
