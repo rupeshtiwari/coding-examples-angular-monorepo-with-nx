@@ -12,7 +12,7 @@ import {CustomersUserEditorModule} from '@myorg/customers-user-editor';
 import {SalesProductEditorModule} from '@myorg/sales-product-editor';
 
 @NgModule({
-  imports: [CommonModule],
+  imports: [CommonModule,SharedLoggerModule],
   declarations: [ProductListComponent],
   exports: [ProductListComponent],
 })

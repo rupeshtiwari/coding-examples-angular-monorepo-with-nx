@@ -5,9 +5,9 @@ module.exports = {
     '<rootDir>/libs/sales/products',
     '<rootDir>/libs/customers/user-editor',
     '<rootDir>/libs/customers/users',
-    '<rootDir>/libs/shared/ng-material',
-    '<rootDir>/libs/shared/layout',
+    '<rootDir>/libs/branding/ng-material',
+    '<rootDir>/libs/branding/layout',
     '<rootDir>/apps/onlinestore-client',
-    '<rootDir>/libs/shared/logger',
+    '<rootDir>/libs/branding/logger',
   ],
 };

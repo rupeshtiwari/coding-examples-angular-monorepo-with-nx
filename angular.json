@@ -282,19 +282,19 @@
     },
     "shared-ng-material": {
       "projectType": "library",
-      "root": "libs/shared/ng-material",
-      "sourceRoot": "libs/shared/ng-material/src",
+      "root": "libs/branding/ng-material",
+      "sourceRoot": "libs/branding/ng-material/src",
       "prefix": "myorg",
       "architect": {
         "build": {
           "builder": "@nrwl/angular:ng-packagr-lite",
           "options": {
-            "tsConfig": "libs/shared/ng-material/tsconfig.lib.json",
-            "project": "libs/shared/ng-material/ng-package.json"
+            "tsConfig": "libs/branding/ng-material/tsconfig.lib.json",
+            "project": "libs/branding/ng-material/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "libs/shared/ng-material/tsconfig.lib.prod.json"
+              "tsConfig": "libs/branding/ng-material/tsconfig.lib.prod.json"
             }
           }
         },
@@ -302,16 +302,16 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "libs/shared/ng-material/tsconfig.lib.json",
-              "libs/shared/ng-material/tsconfig.spec.json"
+              "libs/branding/ng-material/tsconfig.lib.json",
+              "libs/branding/ng-material/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/shared/ng-material/**/*"]
+            "exclude": ["**/node_modules/**", "!libs/branding/ng-material/**/*"]
           }
         },
         "test": {
           "builder": "@nrwl/jest:jest",
           "options": {
-            "jestConfig": "libs/shared/ng-material/jest.config.js",
+            "jestConfig": "libs/branding/ng-material/jest.config.js",
             "passWithNoTests": true
           }
         }
@@ -320,19 +320,19 @@
     },
     "shared-layout": {
       "projectType": "library",
-      "root": "libs/shared/layout",
-      "sourceRoot": "libs/shared/layout/src",
+      "root": "libs/branding/layout",
+      "sourceRoot": "libs/branding/layout/src",
       "prefix": "myorg",
       "architect": {
         "build": {
           "builder": "@nrwl/angular:ng-packagr-lite",
           "options": {
-            "tsConfig": "libs/shared/layout/tsconfig.lib.json",
-            "project": "libs/shared/layout/ng-package.json"
+            "tsConfig": "libs/branding/layout/tsconfig.lib.json",
+            "project": "libs/branding/layout/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "libs/shared/layout/tsconfig.lib.prod.json"
+              "tsConfig": "libs/branding/layout/tsconfig.lib.prod.json"
             }
           }
         },
@@ -340,16 +340,16 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "libs/shared/layout/tsconfig.lib.json",
-              "libs/shared/layout/tsconfig.spec.json"
+              "libs/branding/layout/tsconfig.lib.json",
+              "libs/branding/layout/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/shared/layout/**/*"]
+            "exclude": ["**/node_modules/**", "!libs/branding/layout/**/*"]
           }
         },
         "test": {
           "builder": "@nrwl/jest:jest",
           "options": {
-            "jestConfig": "libs/shared/layout/jest.config.js",
+            "jestConfig": "libs/branding/layout/jest.config.js",
             "passWithNoTests": true
           }
         }
@@ -479,19 +479,19 @@
     },
     "shared-logger": {
       "projectType": "library",
-      "root": "libs/shared/logger",
-      "sourceRoot": "libs/shared/logger/src",
+      "root": "libs/branding/logger",
+      "sourceRoot": "libs/branding/logger/src",
       "prefix": "myorg",
       "architect": {
         "build": {
           "builder": "@nrwl/angular:package",
           "options": {
-            "tsConfig": "libs/shared/logger/tsconfig.lib.json",
-            "project": "libs/shared/logger/ng-package.json"
+            "tsConfig": "libs/branding/logger/tsconfig.lib.json",
+            "project": "libs/branding/logger/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "libs/shared/logger/tsconfig.lib.prod.json"
+              "tsConfig": "libs/branding/logger/tsconfig.lib.prod.json"
             }
           }
         },
@@ -499,16 +499,16 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "libs/shared/logger/tsconfig.lib.json",
-              "libs/shared/logger/tsconfig.spec.json"
+              "libs/branding/logger/tsconfig.lib.json",
+              "libs/branding/logger/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/shared/logger/**/*"]
+            "exclude": ["**/node_modules/**", "!libs/branding/logger/**/*"]
           }
         },
         "test": {
           "builder": "@nrwl/jest:jest",
           "options": {
-            "jestConfig": "libs/shared/logger/jest.config.js",
+            "jestConfig": "libs/branding/logger/jest.config.js",
             "passWithNoTests": true
           }
         }

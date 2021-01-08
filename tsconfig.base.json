@@ -22,9 +22,9 @@
         "libs/customers/user-editor/src/index.ts"
       ],
       "@myorg/customers-users": ["libs/customers/users/src/index.ts"],
-      "@myorg/shared/ng-material": ["libs/shared/ng-material/src/index.ts"],
-      "@myorg/shared/layout": ["libs/shared/layout/src/index.ts"],
-      "@myorg/shared/logger": ["libs/shared/logger/src/index.ts"]
+      "@myorg/shared/ng-material": ["libs/branding/ng-material/src/index.ts"],
+      "@myorg/shared/layout": ["libs/branding/layout/src/index.ts"],
+      "@myorg/shared/logger": ["libs/branding/logger/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

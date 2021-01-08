@@ -62,6 +62,30 @@
       "tags": [
         "scope:branding"
       ]
+    },
+    "onlinestore-client": {
+      "tags": [
+        "type:app",
+        "scope:client"
+      ]
+    },
+    "onlinestore-admin": {
+      "tags": [
+        "type:app",
+        "scope:admin"
+      ]
+    },
+    "onlinestore-client-e2e": {
+      "tags": [],
+      "implicitDependencies": [
+        "onlinestore-client"
+      ]
+    },
+    "onlinestore-admin-e2e": {
+      "tags": [],
+      "implicitDependencies": [
+        "onlinestore-admin"
+      ]
     }
   }
 }
