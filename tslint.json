@@ -78,31 +78,23 @@
         "allow": [],
         "depConstraints": [
           {
-            "sourceTag": "type:sales",
+            "sourceTag": "scope:sales",
             "onlyDependOnLibsWithTags": [
-              "type:sales",
-              "type:branding"
+              "scope:sales",
+              "scope:branding"
             ]
           },
           {
-            "sourceTag": "type:customers",
+            "sourceTag": "scope:customers",
             "onlyDependOnLibsWithTags": [
-              "type:customers",
-              "type:branding"
+              "scope:customers",
+              "scope:branding"
             ]
           },
           {
-            "sourceTag": "scope:admin",
+            "sourceTag": "scope:branding",
             "onlyDependOnLibsWithTags": [
-              "scope:admin",
-              "scope:shared"
-            ]
-          },
-          {
-            "sourceTag": "scope:client",
-            "onlyDependOnLibsWithTags": [
-              "scope:shared",
-              "scope:client"
+              "scope:branding"
             ]
           }
         ]
@@ -133,5 +125,4 @@
     "use-lifecycle-interface": true,
     "use-pipe-transform-interface": true
   }
-
 }

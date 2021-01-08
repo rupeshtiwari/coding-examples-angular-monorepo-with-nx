@@ -20,6 +20,7 @@ export class AdduserComponent implements OnInit {
   addUser() {
     this.showThanks = true;
     const msg =`${this.user.firstName} ${this.user.lastName} added successfully!`;
+    
     this.logService.log(msg);
     this._snackBar.open(
       msg,

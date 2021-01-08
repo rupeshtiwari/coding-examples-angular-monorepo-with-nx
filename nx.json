@@ -18,45 +18,50 @@
     "default": {
       "runner": "@nrwl/workspace/tasks-runners/default",
       "options": {
-        "cacheableOperations": ["build", "lint", "test", "e2e"]
+        "cacheableOperations": [
+          "build",
+          "lint",
+          "test",
+          "e2e"
+        ]
       }
     }
   },
   "projects": {
-    "onlinestore-client": {
-      "tags": ["type:app", "scope:client"]
-    },
-    "onlinestore-admin": {
-      "tags": ["type:app", "scope:admin"]
-    },
-    "onlinestore-client-e2e": {
-      "tags": [],
-      "implicitDependencies": ["onlinestore-client"]
-    },
-    "onlinestore-admin-e2e": {
-      "tags": [],
-      "implicitDependencies": ["onlinestore-admin"]
-    },
     "sales-product-editor": {
-      "tags": ["scope:admin", "type:sales"]
+      "tags": [
+        "scope:sales"
+      ]
     },
     "sales-products": {
-      "tags": ["scope:client", "type:sales"]
+      "tags": [
+        "scope:sales"
+      ]
     },
     "customers-user-editor": {
-      "tags": ["scope:admin", "type:customers"]
+      "tags": [
+        "scope:customers"
+      ]
     },
     "customers-users": {
-      "tags": ["scope:client", "type:customers"]
+      "tags": [
+        "scope:customers"
+      ]
     },
     "shared-ng-material": {
-      "tags": ["scope:shared", "type:branding"]
+      "tags": [
+        "scope:branding"
+      ]
     },
     "shared-layout": {
-      "tags": ["scope:shared", "type:branding"]
+      "tags": [
+        "scope:branding"
+      ]
     },
     "shared-logger": {
-      "tags": ["scope:shared", "tag:branding"]
+      "tags": [
+        "scope:branding"
+      ]
     }
   }
 }
