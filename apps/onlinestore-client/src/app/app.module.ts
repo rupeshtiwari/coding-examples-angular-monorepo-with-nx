@@ -6,7 +6,7 @@ import { SalesProductsModule } from '@myorg/sales-products';
 import { AppComponent } from './app.component';
 import { ProductListPageComponent } from './product-list-page/product-list-page.component';
 import { UserListPageComponent } from './user-list-page/user-list-page.component';
-import { SharedNgMaterialModule } from '@myorg/shared/ng-material';
+import { BrandingNgMaterialModule } from '@myorg/branding/ng-material';
 
 @NgModule({
   declarations: [AppComponent, ProductListPageComponent, UserListPageComponent],
@@ -14,7 +14,7 @@ import { SharedNgMaterialModule } from '@myorg/shared/ng-material';
     BrowserModule,
     SalesProductsModule,
     CustomersUsersModule,
-    SharedNgMaterialModule,
+    BrandingNgMaterialModule,
     RouterModule.forRoot(
       [
         { path: '', redirectTo: '/products', pathMatch: 'full' },

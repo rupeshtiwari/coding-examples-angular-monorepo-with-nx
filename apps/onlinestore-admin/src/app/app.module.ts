@@ -2,17 +2,17 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
-import { SharedNgMaterialModule } from '@myorg/shared/ng-material';
+import { BrandingNgMaterialModule } from '@myorg/branding/ng-material';
 import { AppComponent } from './app.component';
-import { SharedLoggerModule } from '@myorg/shared/logger';
+import { BrandingLoggerModule } from '@myorg/branding/logger';
 
 @NgModule({
   declarations: [AppComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    SharedNgMaterialModule,
-    SharedLoggerModule,
+    BrandingNgMaterialModule,
+    BrandingLoggerModule,
     RouterModule.forRoot(
       [
         { path: '', redirectTo: '/adduser', pathMatch: 'full' },

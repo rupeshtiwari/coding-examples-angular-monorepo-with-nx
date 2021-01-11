@@ -91,4 +91,4 @@ import { MatTreeModule } from '@angular/material/tree';
     ScrollingModule,
   ],
 })
-export class SharedNgMaterialModule {}
+export class BrandingNgMaterialModule {}

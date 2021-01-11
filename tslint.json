@@ -85,6 +85,24 @@
             ]
           },
           {
+            "sourceTag": "type:sales-product-editor",
+            "onlyDependOnLibsWithTags": [
+              "type:sales-product-editor",
+              "type:branding-logger",
+              "type:branding-layout",
+              "type:branding-ng-material"
+            ]
+          },
+          {
+            "sourceTag": "type:sales-producs",
+            "onlyDependOnLibsWithTags": [
+              "type:sales-products",
+              "type:branding-logger",
+              "type:branding-layout",
+              "type:branding-ng-material"
+            ]
+          },
+          {
             "sourceTag": "scope:customers",
             "onlyDependOnLibsWithTags": [
               "scope:customers",

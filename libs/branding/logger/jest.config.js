@@ -1,5 +1,5 @@
 module.exports = {
-  displayName: 'shared-logger',
+  displayName: 'branding-logger',
   preset: '../../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
   globals: {

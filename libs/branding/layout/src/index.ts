@@ -1,1 +1,1 @@
-export * from './lib/shared-layout.module';
+export * from './lib/branding-layout.module';

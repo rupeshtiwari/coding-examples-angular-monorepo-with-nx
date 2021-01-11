@@ -30,49 +30,56 @@
   "projects": {
     "sales-product-editor": {
       "tags": [
-        "scope:sales"
+        "scope:sales",
+        "type:sales-product-editor"
       ]
     },
     "sales-products": {
       "tags": [
-        "scope:sales"
+        "scope:sales",
+        "type:sales-products"
       ]
     },
     "customers-user-editor": {
       "tags": [
-        "scope:customers"
+        "scope:customers",
+        "type:customers-user-editor"
       ]
     },
     "customers-users": {
       "tags": [
-        "scope:customers"
+        "scope:customers",
+        "type:customers-users"
       ]
     },
-    "shared-ng-material": {
+    "branding-ng-material": {
       "tags": [
-        "scope:branding"
+        "scope:branding",
+        "type:branding-ng-material"
       ]
     },
-    "shared-layout": {
+    "branding-layout": {
       "tags": [
-        "scope:branding"
+        "scope:branding",
+        "type:branding-layout"
       ]
     },
-    "shared-logger": {
+    "branding-logger": {
       "tags": [
-        "scope:branding"
+        "scope:branding",
+        "type:branding-logger"
       ]
     },
     "onlinestore-client": {
       "tags": [
-        "type:app",
-        "scope:client"
+        "scope:itops",
+        "type:app"
       ]
     },
     "onlinestore-admin": {
       "tags": [
-        "type:app",
-        "scope:admin"
+        "scope:itops",
+        "type:app"
       ]
     },
     "onlinestore-client-e2e": {

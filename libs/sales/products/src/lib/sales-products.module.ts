@@ -2,8 +2,8 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { ProductListComponent } from './product-list/product-list.component';
 
-// sales project
-import {SharedLoggerModule} from '@myorg/shared/logger';
+// sales project can depend on branding's logger project
+import {BrandingLoggerModule} from '@myorg/branding/logger';
 
 // Sales project can not depend on Customers project
 import {CustomersUserEditorModule} from '@myorg/customers-user-editor';
@@ -12,7 +12,7 @@ import {CustomersUserEditorModule} from '@myorg/customers-user-editor';
 import {SalesProductEditorModule} from '@myorg/sales-product-editor';
 
 @NgModule({
-  imports: [CommonModule,SharedLoggerModule],
+  imports: [CommonModule,BrandingLoggerModule],
   declarations: [ProductListComponent],
   exports: [ProductListComponent],
 })

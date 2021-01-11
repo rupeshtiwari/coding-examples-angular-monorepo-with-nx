@@ -280,7 +280,7 @@
       },
       "schematics": {}
     },
-    "shared-ng-material": {
+    "branding-ng-material": {
       "projectType": "library",
       "root": "libs/branding/ng-material",
       "sourceRoot": "libs/branding/ng-material/src",
@@ -318,7 +318,7 @@
       },
       "schematics": {}
     },
-    "shared-layout": {
+    "branding-layout": {
       "projectType": "library",
       "root": "libs/branding/layout",
       "sourceRoot": "libs/branding/layout/src",
@@ -477,7 +477,7 @@
         }
       }
     },
-    "shared-logger": {
+    "branding-logger": {
       "projectType": "library",
       "root": "libs/branding/logger",
       "sourceRoot": "libs/branding/logger/src",

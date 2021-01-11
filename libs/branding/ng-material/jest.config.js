@@ -1,5 +1,5 @@
 module.exports = {
-  displayName: 'shared-ng-material',
+  displayName: 'branding-ng-material',
   preset: '../../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
   globals: {

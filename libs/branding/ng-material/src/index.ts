@@ -1,1 +1,1 @@
-export * from './lib/shared-ng-material.module';
+export * from './lib/branding-ng-material.module';

@@ -1,5 +1,5 @@
 module.exports = {
-  displayName: 'shared-layout',
+  displayName: 'branding-layout',
   preset: '../../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
   globals: {
