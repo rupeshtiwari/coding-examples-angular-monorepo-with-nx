@@ -18,81 +18,52 @@
     "default": {
       "runner": "@nrwl/workspace/tasks-runners/default",
       "options": {
-        "cacheableOperations": [
-          "build",
-          "lint",
-          "test",
-          "e2e"
-        ]
+        "cacheableOperations": ["build", "lint", "test", "e2e"]
       }
     }
   },
   "projects": {
     "sales-product-editor": {
-      "tags": [
-        "scope:sales",
-        "type:sales-product-editor"
-      ]
+      "tags": ["scope:sales", "type:sales-product-editor"]
     },
     "sales-products": {
-      "tags": [
-        "scope:sales",
-        "type:sales-products"
-      ]
+      "tags": ["scope:sales", "type:sales-products"]
     },
     "customers-user-editor": {
-      "tags": [
-        "scope:customers",
-        "type:customers-user-editor"
-      ]
+      "tags": ["scope:customers", "type:customers-user-editor"]
     },
     "customers-users": {
-      "tags": [
-        "scope:customers",
-        "type:customers-users"
-      ]
+      "tags": ["scope:customers", "type:customers-users"]
     },
     "branding-ng-material": {
-      "tags": [
-        "scope:branding",
-        "type:branding-ng-material"
-      ]
+      "tags": ["scope:branding", "type:branding-ng-material"]
     },
     "branding-layout": {
-      "tags": [
-        "scope:branding",
-        "type:branding-layout"
-      ]
+      "tags": ["scope:branding", "type:branding-layout"]
     },
     "branding-logger": {
-      "tags": [
-        "scope:branding",
-        "type:branding-logger"
-      ]
+      "tags": ["scope:branding", "type:branding-logger"]
     },
     "onlinestore-client": {
-      "tags": [
-        "scope:itops",
-        "type:app"
-      ]
+      "tags": ["scope:itops", "type:app"]
     },
     "onlinestore-admin": {
-      "tags": [
-        "scope:itops",
-        "type:app"
-      ]
+      "tags": ["scope:itops", "type:app"]
     },
     "onlinestore-client-e2e": {
       "tags": [],
-      "implicitDependencies": [
-        "onlinestore-client"
-      ]
+      "implicitDependencies": ["onlinestore-client"]
     },
     "onlinestore-admin-e2e": {
       "tags": [],
-      "implicitDependencies": [
-        "onlinestore-admin"
-      ]
+      "implicitDependencies": ["onlinestore-admin"]
+    },
+    "onlinestore-dashboard": {
+      "tags": ["scope:itops", "type:app"]
+    },
+    "onlinestore-dashboard-e2e": {
+      "tags": [],
+      "implicitDependencies": ["onlinestore-dashboard"]
     }
   }
 }
