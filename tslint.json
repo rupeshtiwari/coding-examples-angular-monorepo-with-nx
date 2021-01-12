@@ -94,7 +94,7 @@
             ]
           },
           {
-            "sourceTag": "type:sales-producs",
+            "sourceTag": "type:sales-products",
             "onlyDependOnLibsWithTags": [
               "type:sales-products",
               "type:branding-logger",
@@ -107,6 +107,24 @@
             "onlyDependOnLibsWithTags": [
               "scope:customers",
               "scope:branding"
+            ]
+          },
+          {
+            "sourceTag": "type:customers-user-editor",
+            "onlyDependOnLibsWithTags": [
+              "type:customers-user-editor",
+              "type:branding-logger",
+              "type:branding-layout",
+              "type:branding-ng-material"
+            ]
+          },
+          {
+            "sourceTag": "type:customers-users",
+            "onlyDependOnLibsWithTags": [
+              "type:customers-users",
+              "type:branding-logger",
+              "type:branding-layout",
+              "type:branding-ng-material"
             ]
           },
           {
