@@ -31,8 +31,13 @@
     "build:all": "nx run-many --all --parallel --target=build",
     "build:apps": "nx run-many --parallel --target=build --projects=onlinestore-admin,onlinestore-client --with-deps --configuration=production",
     "test:customers-users:chrome": "node --inspect-brk ./node_modules/jest/bin/jest.js --runInBand ./libs/customers/users/src --watch",
-    "copy:dashboard:pjfile:prd": "copyfiles ./apps/onlinestore-dashboard/package.json ./dist",
-    "version:dashboard:pjfile:prd": "cd ./apps/onlinestore-dashboard && json -I -f package.json this.version=$(node -e \"JSON.stringify(require('../../package.json').version)\")"
+    "copy:dashboard:prd": "copyfiles ./apps/onlinestore-dashboard/package.json ./dist",
+    "build:dashboard:prd" :"nx build onlinestore-dashboard && npm run copy:dashboard:prd",
+    "publish:dashboard":"cd dist/apps/onlinestore-dashboard && npm publish --access public",
+    "publish:dashboard:patch":"cd dist/apps/onlinestore-dashboard && npm version patch --force && ",
+    "publish:dashboard:major":"cd dist/apps/onlinestore-dashboard && npm version patch --force && npm publish --access public",
+    "publish:dashboard:minor":"cd dist/apps/onlinestore-dashboard && npm version patch --force && npm publish --access public"
+
   },
   "private": true,
   "dependencies": {
