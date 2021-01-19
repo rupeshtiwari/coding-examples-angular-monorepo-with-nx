@@ -26,7 +26,7 @@
     "workspace-schematic": "nx workspace-schematic",
     "dep-graph": "nx dep-graph",
     "help": "nx help",
-    "ci":"build:affected:prod",
+    "ci": "build:affected:prod",
     "build:affected:prod": "nx affected:build --parallel --maxParallel=5 --configuration=production --with-deps --base=master~1 --head=master",
     "test:prod": "nx affected:test --parallel --ci --code-coverage",
     "build:all": "nx run-many --all --parallel --target=build",
@@ -39,8 +39,8 @@
     "publish:dashboard": "cd dist/apps/onlinestore-dashboard && npm publish --access public",
     "publish:dashboard:patch": "cd dist/apps/onlinestore-dashboard && npm version patch --force && ",
     "publish:dashboard:major": "cd dist/apps/onlinestore-dashboard && npm version patch --force && npm publish --access public",
-    "publish:dashboard:minor": "cd dist/apps/onlinestore-dashboard && npm version patch --force && npm publish --access public",
-    "release": "npx semantic-release"
+    "publish:dashboard:minor": "cd dist/apps/onlinestore-dashboard && npm version patch --force && npm publish --access public"
+
   },
   "commitlint": {
     "extends": [
@@ -61,32 +61,6 @@
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
-  },
-  "release": {
-    "plugins": [
-      "@semantic-release/commit-analyzer",
-      "@semantic-release/release-notes-generator",
-      [
-        "@semantic-release/npm",
-        {
-          "npmPublish": false
-        }
-      ],
-      [
-        "@semantic-release/changelog",
-        {
-          "changelogFile": "docs/CHANGELOG.md"
-        }
-      ],
-      [
-        "@semantic-release/github",
-        {
-          "assets": [
-            "docs/CHANGELOG.md"
-          ]
-        }
-      ]
-    ]
   },
   "private": true,
   "dependencies": {
