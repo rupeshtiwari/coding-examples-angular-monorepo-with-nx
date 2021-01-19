@@ -26,7 +26,7 @@
     "workspace-schematic": "nx workspace-schematic",
     "dep-graph": "nx dep-graph",
     "help": "nx help",
-    "ci": "build:affected:prod",
+    "ci": "npm run build:affected:prod",
     "build:affected:prod": "nx affected:build --parallel --maxParallel=5 --configuration=production --with-deps --base=master~1 --head=master",
     "test:prod": "nx affected:test --parallel --ci --code-coverage",
     "build:all": "nx run-many --all --parallel --target=build",
