@@ -4,6 +4,6 @@ import { Injectable } from '@angular/core';
   { providedIn: 'root' })
 export class LogService {
   log(message: string) {
-    console.log(message);
+    console.log(message+new Date().getTime());
   }
 }
