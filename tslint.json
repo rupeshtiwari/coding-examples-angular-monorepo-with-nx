@@ -60,6 +60,26 @@
         "allow": [],
         "depConstraints": [
           {
+            "sourceTag": "type:onlinestore-client",
+            "onlyDependOnLibsWithTags": [
+              "type:sales-products",
+              "type:customers-users",
+              "type:branding-logger",
+              "type:branding-layout",
+              "type:branding-ng-material"
+            ]
+          },
+          {
+            "sourceTag": "type:onlinestore-admin",
+            "onlyDependOnLibsWithTags": [
+              "type:sales-product-editor",
+              "type:customers-user-editor",
+              "type:branding-logger",
+              "type:branding-layout",
+              "type:branding-ng-material"
+            ]
+          },
+          {
             "sourceTag": "scope:sales",
             "onlyDependOnLibsWithTags": ["scope:sales", "scope:branding"]
           },

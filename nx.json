@@ -45,10 +45,13 @@
       "tags": ["scope:branding", "type:branding-logger"]
     },
     "onlinestore-client": {
-      "tags": ["scope:itops", "type:app"]
+      "tags": ["scope:itops", "type:onlinestore-client"]
     },
     "onlinestore-admin": {
-      "tags": ["scope:itops", "type:app"]
+      "tags": ["scope:itops", "type:onlinestore-admin"]
+    },
+    "onlinestore-dashboard": {
+      "tags": ["scope:itops", "type:onlinestore-dashboard"]
     },
     "onlinestore-client-e2e": {
       "tags": [],
@@ -57,9 +60,6 @@
     "onlinestore-admin-e2e": {
       "tags": [],
       "implicitDependencies": ["onlinestore-admin"]
-    },
-    "onlinestore-dashboard": {
-      "tags": ["scope:itops", "type:app"]
     },
     "onlinestore-dashboard-e2e": {
       "tags": [],
