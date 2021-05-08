@@ -1,8 +1,10 @@
-[![Build status](https://dev.azure.com/Rupesh0904/Open%20Source/_apis/build/status/MonoRepo-Nx-Build)](https://dev.azure.com/Rupesh0904/Open%20Source/_build/latest?definitionId=1)
+![](https://imgur.com/jQBJAFC.png)
 
 # MonoRepo Sample using NX
 
-![](https://imgur.com/jQBJAFC.png)
+> Monorepo sample only focused on core concepts of Nx monorepo. It has basic Azure CI/CD pipeline also.
+
+## Learning Objectives
 
 In this repo you will learn below:
 
@@ -14,9 +16,6 @@ In this repo you will learn below:
 - Azure CI/CD build badge to update build live status.
 
 ⚠️ **Note**: This repo is demonstrating the core capabilities of Nx Monorepo. I have done very basic CI/CD work here. For extensive CI/CD work please visit my other repo.
-
-
-
 
 
 ## Artifacts published in the Azure pipeline

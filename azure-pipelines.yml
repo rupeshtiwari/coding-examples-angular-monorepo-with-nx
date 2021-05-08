@@ -1,22 +1,47 @@
-# Node.js with Angular
-# Build a Node.js project that uses Angular.
-# Add steps that analyze code, save build artifacts, deploy, and more:
-# https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
-
-trigger:
-- main
-
 pool:
-  vmImage: 'ubuntu-latest'
+  name: Azure Pipelines
+  demands: npm
 
 steps:
-- task: NodeTool@0
-  inputs:
-    versionSpec: '10.x'
-  displayName: 'Install Node.js'
+  - task: Cache@2
+    displayName: 'Cache Npm Dependencies'
+    inputs:
+      key: '**/package-lock.json, !**/node_modules/**/package-lock.json, !**/.*/**/package-lock.json'
+      path: '$(Build.SourcesDirectory)/node_modules'
+      cacheHitVar: CacheRestored
 
-- script: |
-    npm install -g @angular/cli
-    npm install
-    ng build --prod
-  displayName: 'npm install and build'
+  - task: Npm@1
+    displayName: 'npm ci'
+    inputs:
+      command: ci
+      verbose: false
+    condition: ne(variables['CacheRestored'], 'true')
+
+  - task: Npm@1
+    displayName: 'npm build'
+    inputs:
+      command: custom
+      verbose: false
+      customCommand: 'run ci:prod'
+
+  - powershell: |
+      $distExists = Test-Path -Path "$(Build.SourcesDirectory)/dist"
+      Write-Host "##vso[task.setvariable variable=DistExists]$distExists"
+
+  - task: CopyFiles@2
+    displayName: 'Copy Files to: $(Build.ArtifactStagingDirectory)'
+    inputs:
+      SourceFolder: '$(Build.SourcesDirectory)/dist'
+      TargetFolder: '$(Build.ArtifactStagingDirectory)'
+    condition: eq(variables['DistExists'], True) # If dist folder present then copy else skip
+
+  - task: ArchiveFiles@2
+    displayName: 'Archive Files'
+    inputs:
+      rootFolderOrFile: '$(Build.ArtifactStagingDirectory)'
+      includeRootFolder: false
+    condition: eq(variables['DistExists'], True)
+
+  - task: PublishBuildArtifacts@1
+    displayName: 'Publish Artifact: drop'
+    condition: eq(variables['DistExists'], True)
