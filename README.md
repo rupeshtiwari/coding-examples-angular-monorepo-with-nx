@@ -2,7 +2,7 @@
 
 # MonoRepo Sample using NX
 
-> Monorepo sample only focused on core concepts of Nx monorepo. It has basic Azure CI/CD pipeline also.
+> Monorepo sample only focused **only on core concepts of Nx monorepo**. It has basic Azure CI/CD pipeline also.
 
 ## Learning Objectives
 
