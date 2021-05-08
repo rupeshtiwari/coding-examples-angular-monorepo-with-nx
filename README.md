@@ -2,10 +2,39 @@
 
 # MonoRepo Sample using NX
 
+In this repo you will learn below:
+
+- Create Angular Projects with Nx Monorepo
+- Create Multiple Angular Apps
+- Restrict Commit with conventional commit comments
+- Restrict dependency graph using Nx Dependency constrains
+- Implement build and CI/CD using Azure Pipeline and publish artifacts to Azure Pipeline
+- Azure CI/CD build badge to update build live status.
+
+⚠️ **Note**: This repo is demonstrating the core capabilities of Nx Monorepo. I have done very basic CI/CD work here. For extensive CI/CD work please visit my other repo.
+
+## Artifacts published in the Azure pipeline
+
+![](https://imgur.com/j1olSsa.png)
+
+## Azure Build CI/CD pipeline trigger
+
+As soon as you push code CI/CD pipeline will trigger. That will build angular affected app and related libraries. Finally it will publish the artifacts to Azure pipeline.
+
+![](https://imgur.com/BLeftnR.png)
+
+## How to run this project?
+
+- Clone to your local box
+- Run `npm ci` to restore npm packages
+- Run below 2 scripts to see both admin and client apps in action.
+
 ### Run Admin App
+
 ```
 nx serve onlinestore-admin --port=4200
 ```
+
 Visit: http://localhost:4200/adduser
 
 ![](https://imgur.com/0q0zzhe.png)
@@ -23,7 +52,6 @@ Visit: http://localhost:4310/products
 Visit: http://localhost:4310/users
 
 ![](https://imgur.com/K3SVhKx.png)
-
 
 This project was generated using [Nx](https://nx.dev).
 
