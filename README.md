@@ -2,6 +2,29 @@
 
 # MonoRepo Sample using NX
 
+### Run Admin App
+```
+nx serve onlinestore-admin --port=4200
+```
+Visit: http://localhost:4200/adduser
+
+![](https://imgur.com/0q0zzhe.png)
+
+### Run Client App
+
+```
+nx serve onlinestore-client --port=4310
+```
+
+Visit: http://localhost:4310/products
+
+![](https://imgur.com/c7T0oh9.png)
+
+Visit: http://localhost:4310/users
+
+![](https://imgur.com/K3SVhKx.png)
+
+
 This project was generated using [Nx](https://nx.dev).
 
 <p align="center"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="450"></p>
