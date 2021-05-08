@@ -43,7 +43,7 @@ This project was generated using [Nx](https://nx.dev).
 
 Nx supports many plugins which add capabilities for developing different types of applications and different tools.
 
-These capabilities include generating applications, libraries, etc as well as the devtools to test, and build projects as well.
+These capabilities include generating applications, libraries, etc. as well as the devtools to test, and build projects as well.
 
 Below are our core plugins:
 
