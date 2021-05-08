@@ -2,6 +2,8 @@
 
 # MonoRepo Sample using NX
 
+![](https://imgur.com/jQBJAFC.png)
+
 In this repo you will learn below:
 
 - Create Angular Projects with Nx Monorepo
@@ -12,6 +14,10 @@ In this repo you will learn below:
 - Azure CI/CD build badge to update build live status.
 
 ⚠️ **Note**: This repo is demonstrating the core capabilities of Nx Monorepo. I have done very basic CI/CD work here. For extensive CI/CD work please visit my other repo.
+
+
+
+
 
 ## Artifacts published in the Azure pipeline
 
